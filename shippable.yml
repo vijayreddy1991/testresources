@@ -2,7 +2,7 @@
 resources:
   - name: testing
     type: gitRepo
-    repoPath: ranjansingh41/testresources
+    repoPath: vijayreddy1991/testresources
     configuration:
       integrationName: github
       branches:
