@@ -11,20 +11,9 @@ resources:
       sha: master
 
 pipelines:
-  - name: pipeline
-    steps:
-       - name: none_language
-         type: bash
-         setup:
-           runtime:
-             type: image
-              image:
-                auto:
-                  language: none            
-         execution:
-           onExecute:
-             - echo TEST_FOR_NONE
-             - node -v
+  - name: pipe1@
+
+
 
 
             
