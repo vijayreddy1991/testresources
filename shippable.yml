@@ -11,7 +11,7 @@ resources:
       sha: master
 
 pipelines:
-  - name: pipe1@
+  - name: testing1
     steps:  
       - name: testJob1
         type: bash
