@@ -11,8 +11,13 @@ resources:
       sha: master
 
 pipelines:
-  - name: pipe1@
-
+  - name: pipe1
+    steps:  
+      - name: testJob1
+        type: bash
+        execution:
+          onExecute:
+            - echo "hello!"
 
 
 
