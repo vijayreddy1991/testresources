@@ -11,14 +11,20 @@ resources:
       sha: master
 
 pipelines:
-  - name: testing@123.(new)
+  - name: testing
     steps:  
       - name: testJob1
         type: bash
         execution:
           onExecute:
             - echo "hello!"
-
+  - name: testing
+    steps:  
+      - name: testJob2
+        type: bash
+        execution:
+          onExecute:
+            - echo "hello!"
 
 
             
