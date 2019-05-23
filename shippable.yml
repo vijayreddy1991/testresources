@@ -4,7 +4,7 @@ resources:
     type: gitRepo
     repoPath: vijayreddy1991/testresources
     configuration:
-      integrationName: github_vijay
+      integrationName: github_vij
       branches:
         only: master
     initialVersion:
