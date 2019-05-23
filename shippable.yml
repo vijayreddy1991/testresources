@@ -13,7 +13,7 @@ resources:
   - name: webhookIntegrationResource
     type: webhook
     configuration:
-      integrationName: outgoingWebhook
+      integrationName: incomingWebhookIntegration
     initialVersion:
       payload: vijay
 
@@ -22,6 +22,9 @@ pipelines:
     steps:  
       - name: testJob1
         type: bash
+        triggeredBy:
+          resources:
+            - webhookIntegrationResource
         execution:
           onExecute:
             - echo "hello!"
