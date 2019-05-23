@@ -9,6 +9,13 @@ resources:
         only: master
     initialVersion:
       sha: master
+      
+  - name: webhookIntegrationResource
+    type: webhook
+    configuration:
+      integrationName: incomingWebhookIntegration
+    initialVersion:
+      payload: vijay
 
 pipelines:
   - name: testing
