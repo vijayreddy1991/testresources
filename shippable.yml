@@ -13,7 +13,7 @@ resources:
   - name: webhookIntegrationResource
     type: webhook
     configuration:
-      integrationName: incomingWebhookIntegration
+      integrationName: outgoingWebhook
     initialVersion:
       payload: vijay
 
