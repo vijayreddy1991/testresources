@@ -4,7 +4,7 @@ resources:
     type: gitRepo
     repoPath: vijayreddy1991/testresources
     configuration:
-      integrationName: github
+      integrationName: github_vijay
       branches:
         only: master
     initialVersion:
@@ -14,13 +14,6 @@ pipelines:
   - name: testing
     steps:  
       - name: testJob1
-        type: bash
-        execution:
-          onExecute:
-            - echo "hello!"
-  - name: testing
-    steps:  
-      - name: testJob2
         type: bash
         execution:
           onExecute:
