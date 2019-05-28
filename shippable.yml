@@ -27,8 +27,8 @@ pipelines:
                 name: drydock/u16node
                 tag: master
                 options: ""
-#         triggeredBy:
-#           resources:
+        triggeredBy:
+          resources:
 #             - testing1234
         execution:
           onStart:
