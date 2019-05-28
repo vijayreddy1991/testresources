@@ -29,7 +29,13 @@ pipelines:
                 options: ""
         triggeredBy:
           steps:
-            - testing1234        
+            - testing1234
+        execution:
+          onStart:
+            - printenv
+          onExecute:
+            - printenv
+            - echo "vijay"            
 
 
 
