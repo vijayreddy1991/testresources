@@ -4,30 +4,34 @@ resources:
     type: gitRepo
     repoPath: vijayreddy1991/testresources
     configuration:
-      integrationName: github_vijay
+      integrationName: github_vijay_kumar
       branches:
         only: master
-    initialVersion:
+    version:
       sha: master
       
-  - name: webhookIntegrationResource
-    type: webhook
-    configuration:
-      integrationName: incomingWebhookIntegration
-    initialVersion:
-      payload: vijay
-
 pipelines:
-  - name: testing
-    steps:  
-      - name: testJob1
+  - name: pipe_steps
+    steps
+      - name: step_state
         type: bash
+        setup:
+          runtime:            
+            type: image
+            image:
+#               auto:
+#                 language: nodejs
+#                 versions: 
+#                   - 10.15.3
+              custom:
+                name: drydock/u16node
+                tag: master
+                options: ""
         triggeredBy:
-          resources:
-            - webhookIntegrationResource
-        execution:
-          onExecute:
-            - echo "hello!"
+          steps:
+#             - testing        
+
+
 
 
             
