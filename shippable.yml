@@ -1,6 +1,6 @@
 
 resources:
-  - name: testing
+  - name: testing1234
     type: gitRepo
     repoPath: vijayreddy1991/testresources
     configuration:
