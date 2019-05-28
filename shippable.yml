@@ -9,7 +9,7 @@ resources:
         only: master
       tags:
 #         except: <regular expression>
-        only: master       
+        only: latest      
     version:
       sha: latest
       
