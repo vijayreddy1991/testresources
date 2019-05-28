@@ -28,7 +28,7 @@ pipelines:
                 tag: master
                 options: ""
         triggeredBy:
-          steps:
+          resources:
             - testing1234
         execution:
           onStart:
