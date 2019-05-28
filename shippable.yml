@@ -7,6 +7,9 @@ resources:
       integrationName: github_vijay_kumar
       branches:
         only: master
+      tags:
+#         except: <regular expression>
+        only: master       
     version:
       sha: master
       
@@ -29,7 +32,7 @@ pipelines:
                 options: ""
         triggeredBy:
           resources:
-#             - testing1234
+            - testing1234
         execution:
           onStart:
             - printenv
