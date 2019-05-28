@@ -11,7 +11,7 @@ resources:
 #         except: <regular expression>
         only: master       
     version:
-      sha: master
+      sha: latest
       
 pipelines:
   - name: pipe_steps
